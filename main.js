@@ -401,6 +401,12 @@ $(function(){
       })
       .then((data)=>{return outputRegions(data, document.querySelector("#ShippingState"))})
       .then((data) => {
+        $("#ShippingState").val(state);
+        return new Promise((resolve, reject)=>{
+          resolve(data);
+        });
+      })
+      .then((data) => {
         $("select").selectpicker("refresh");
         return new Promise((resolve, reject)=>{
           resolve(data);
