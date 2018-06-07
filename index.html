@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css"> -->
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h2>Billing</h2>
+    <div>
+      <select id="BillingCountry" name="country" class="country"></select>   
+    </div>
+    <div>
+      <select id="BillingState" name="region" class="region"></select>
+    </div>
+  </div>
+  <div style="margin-top: 5rem; margin-bottom: 5rem;">
+    <button type="button" id="copyFields" class="btn btn-secondary">ACTION: Copy fields</button>
+  </div>
+  <div class="wrapper">
+      <h2>Shipping</h2>
+      <div>
+        <select id="ShippingCountry" name="country" class="country"></select>   
+      </div>
+      <div>
+        <select id="ShippingState" name="region" class="region"></select>
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
